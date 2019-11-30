@@ -1,6 +1,9 @@
 ## set working directory
 setwd("C:/Rainer/DataScience/Exploratory Data Analysis/Project 1")
 
+## unzip compressed file
+unzip("household_power_consumption.zip")
+
 ## Load data and remove datasets with missing values (marked with ?)
 data <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings = "?", 
                    colClasses = c('character','character','numeric','numeric','numeric','numeric','numeric','numeric','numeric'))
